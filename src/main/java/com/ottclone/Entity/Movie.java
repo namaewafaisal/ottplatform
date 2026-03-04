@@ -20,22 +20,22 @@ public class Movie {
     private String id;   // MongoDB _id mapped as String
 
     private String plot;
-    private String fullplot;
+    // private String fullplot;
     private List<String> genres;
-    private Integer runtime;
+    private Long runtime;
     private List<String> cast;
     private String poster;
     private String title;
     private List<String> languages;
     private Date released;
     private List<String> directors;
-    private String rated;
-    private Awards awards;
-    private String lastupdated;
+    // private String rated;
+    // private Awards awards;
+    // private String lastupdated;
     private Integer year;
-    private Imdb imdb;
-    private List<String> countries;
+    // private Imdb imdb;
+    // private List<String> countries;
     private String type;
-    private Tomatoes tomatoes;
-    private Integer num_mflix_comments;
+    // private Tomatoes tomatoes;
+    // private Integer num_mflix_comments;
 }
