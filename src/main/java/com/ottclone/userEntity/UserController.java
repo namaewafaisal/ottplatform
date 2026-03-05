@@ -21,7 +21,7 @@ public class UserController {
         return userService.findByUsername(username);
     }
 
-    @PostMapping(value = "/adduser", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping("/adduser")
     public User addUser(@RequestBody User user) {
         return userService.save(user);
     }
