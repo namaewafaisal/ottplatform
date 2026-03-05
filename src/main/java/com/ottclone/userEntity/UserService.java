@@ -1,7 +1,6 @@
 package com.ottclone.userEntity;
 
 
-import java.util.Collections;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,7 @@ public class UserService {
     private UserRepo userRepo;
 
     public User findByUsername(String username) {
-        return userRepo.findByusername(username)
+        return userRepo.findByUsername(username)
                 .orElseThrow(() -> new RuntimeException("User not found"));
     }
 
