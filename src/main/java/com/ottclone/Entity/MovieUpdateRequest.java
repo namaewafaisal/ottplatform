@@ -3,22 +3,7 @@ package com.ottclone.Entity;
 import java.util.Date;
 import java.util.List;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Document(collection = "movies")
-public class Movie {
-
-    @Id
-    private String id;   // MongoDB _id mapped as String
-
+public class MovieUpdateRequest {
     private String plot;
     // private String fullplot;
     private List<String> genres;
@@ -40,6 +25,4 @@ public class Movie {
     // private Imdb imdb;
     // private List<String> countries;
     private String type;
-    // private Tomatoes tomatoes;
-    // private Integer num_mflix_comments;
 }
